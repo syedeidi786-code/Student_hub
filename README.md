@@ -1,101 +1,23 @@
-📚 StudentHub
+# StudentHub
 
-A clean, lightweight student record management system built with Python and Streamlit. StudentHub allows teachers and administrators to manage student profiles, track daily attendance, and calculate exam marks and grades automatically using local JSON storage.
+**Live Site:** [You can visit the site here](https://studentapp-recordmanagementsystem.streamlit.app/)
 
-✨ Features
+StudentHub is a lightweight, web-based student management system built with Python and Streamlit. It provides a clean interface for educators and administrators to manage student profiles, record exam scores, calculate grades, and track daily attendance.
 
-📊 Dashboard Overview: View key metrics at a glance—total enrolled students, students with recorded marks, today's attendance summary, and a list of recently added students.
+## Key Features
 
-👨‍🎓 Student Management:
+- **Dashboard Overview:** View total enrolled students, how many students have recorded marks, today's attendance summary, and a list of the most recently added students.
+- **Student Management:** Add new students across Classes 6 to 12 with duplicate roll number prevention, search records by name or roll number, view individual academic summary cards, and edit or delete student profiles.
+- **Marks & Automated Grading:** Enter subject-wise marks out of 100 for English, Mathematics, and Science, with automatic calculation of total score, overall percentage, and letter grades from A+ down to F.
+- **Attendance Tracking:** Mark daily Present or Absent status for each student, monitor overall attendance percentages with color-coded status indicators, and review day-by-day attendance logs.
 
-Add new students with full name, unique roll number, age, and class (Class 6 to Class 12).
+## Technologies Used
 
-Search students instantly by name or roll number.
+- Python
+- Streamlit
+- HTML & CSS
+- JSON (Local Data Storage)
 
-View individual student profile cards summarizing their overall marks, percentage, grade, and attendance rate.
+## License
 
-Edit student details or delete records (automatically cleans up associated marks and attendance).
-
-📝 Marks & Grading:
-
-Enter subject-wise marks (English, Mathematics, Science — out of 100 each).
-
-Automatically calculates total score, percentage, and letter grade (A+, A, B, C, D, F).
-
-Displays a complete results table with color-coded grade badges.
-
-✅ Attendance Tracking:
-
-Mark daily attendance (Present / Absent) for all students on any selected date.
-
-View overall attendance percentages per student with color-coded status pills.
-
-Inspect day-by-day attendance history for individual students.
-
-🗂️ Project Structure
-
-Student_hub/
-├── app.py              # Main Streamlit web application & UI layout
-├── students.py         # Student CRUD operations and search logic
-├── marks.py            # Marks storage, percentage, and grade calculation
-├── attendance.py       # Daily attendance tracking and summary statistics
-├── assets/
-│   └── style.css       # Custom CSS styling (optional; app includes fallback styles)
-├── data/               # Auto-generated folder storing JSON records
-│   ├── students.json
-│   ├── marks.json
-│   └── attendance.json
-├── LICENSE             # MIT License
-└── README.md           # Project documentation
-
-
-🚀 Getting Started
-
-Prerequisites
-
-Python 3.8 or higher
-
-pip (Python package manager)
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/Student_hub.git
-cd Student_hub
-
-
-Create and activate a virtual environment (optional but recommended):
-
-python -m venv .venv
-# On Windows:
-.venv\Scripts\activate
-# On macOS/Linux:
-source .venv/bin/activate
-
-
-Install Streamlit:
-
-pip install streamlit
-
-
-Running the Application
-
-Launch the app using the Streamlit CLI:
-
-streamlit run app.py
-
-
-Once started, open your browser and navigate to http://localhost:8501.
-
-🛠️ Tech Stack
-
-Frontend / UI: Streamlit, Custom HTML & CSS
-
-Backend: Python Standard Library (json, os, datetime, html)
-
-Database: Local JSON file storage (zero external database setup required)
-
-📄 License
-
-This project is licensed under the MIT License — see the LICENSE file for details.
+This project is open-source and available under the MIT License.

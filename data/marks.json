@@ -1,0 +1,17 @@
+{
+    "10": {
+        "English": 70,
+        "Mathematics": 30,
+        "Science": 90
+    },
+    "1": {
+        "English": 55,
+        "Mathematics": 55,
+        "Science": 65
+    },
+    "2": {
+        "English": 90,
+        "Mathematics": 90,
+        "Science": 90
+    }
+}
